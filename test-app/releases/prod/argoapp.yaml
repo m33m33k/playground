@@ -13,4 +13,4 @@ spec:
     plugin:
       name: helmfile
     repoURL: https://github.com/m33m33k/playground
-    targetRevision: master
+    targetRevision: prod
