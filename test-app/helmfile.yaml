@@ -1,19 +1,9 @@
 ---
 repositories:
-  - name: asci
-    url: https://charts.asci.synchrotron.org.au
-  - name: bitnami
-    url: https://charts.bitnami.com/bitnami
+  - name: cetic 
+    url: https://cetic.github.io/helm-charts
     
 releases:
-  - name: ns-mgt
-    chart: asci/raw
-    version: 0.2.5
-    values:
-      - templates:
-      - resources:
-          - apiVersion: v1
-            kind: Namespace
-            metadata:
-              name: cicd-test-namespace
+  - name: cetic-pg-test
+    chart: cetic/postgresql
           
