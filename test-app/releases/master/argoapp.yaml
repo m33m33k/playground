@@ -9,8 +9,8 @@ spec:
     server: https://api.lillypilly.asci.synchrotron.org.au:6443
   project: default
   source:
-    path: test-app/releases/prod
+    path: test-app/releases/master
     plugin:
       name: helmfile
     repoURL: https://github.com/m33m33k/playground
-    targetRevision: prod
+    targetRevision: master
