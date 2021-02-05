@@ -1,17 +1,4 @@
 releases:
-  - name: helloworld-test
+  - name: demo-test 
     namespace: space-dpi
-    chart: ../../charts/demo
-    values:
-      - ingress:
-          enabled: true
-          hosts:
-            - host: cicd-demo-master.asci.synchrotron.org.au
-              paths:
-                - /
-          tls:
-            - hosts:
-              - cicd-demo-master.asci.synchrotron.org.au
-        image:
-          tag: master
-          pullPolicy: Always      
+    chart: ../../../charts/demo
