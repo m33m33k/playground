@@ -1,9 +1,17 @@
----
-repositories:
-  - name: cetic 
-    url: https://cetic.github.io/helm-charts
-    
 releases:
-  - name: cetic-pg-test
-    chart: cetic/postgresql
-          
+  - name: helloworld-test
+    namespace: space-dpi
+    chart: ../../charts/demo
+    values:
+      - ingress:
+          enabled: true
+          hosts:
+            - host: cicd-demo-master.asci.synchrotron.org.au
+              paths:
+                - /
+          tls:
+            - hosts:
+              - cicd-demo-master.asci.synchrotron.org.au
+        image:
+          tag: master
+          pullPolicy: Always      
